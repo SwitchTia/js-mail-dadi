@@ -8,6 +8,22 @@
 // Non è necessario provvedere alla validazione delle email.
 // NON USARE INCLUDES!
 
+const emailList = ["red@mail.com","blue@mail.com","green@mail.com"]
+
+let emailInput = prompt("Insert your email");
+
+for (let i = 0; i < emailList.length; i++){
+    let currentEmail = emailList[i];
+    if(currentEmail !== emailInput){
+        console.log("Something went wrong! Reinsert your email correctly ");
+    }
+    else{
+        console.log("Authentication valid! You can now access your email ");
+    }
+}
+
+
+
 // Gioco dei dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
