@@ -19,6 +19,14 @@ else{
 // L’utente inserisce due parole in successione, con due prompt.
 // Il software stampa prima la parola più corta, poi la parola più lunga.
 
+const word1 = prompt("Insert your first word");
+const word2 = prompt("Insert your second word");
+
+if (word1.length > word2.length){
+    console.log(word2);
+    console.log(word1);
+}
+
 // Snack 3
 // Crea una variabile con un numero di 4 cifre e calcola la somma di tutte le cifre che compongono il numero.
 
