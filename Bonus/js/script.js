@@ -4,6 +4,17 @@
 // Snack 1
 // Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo.
 
+let numberInput = prompt("Insert a number");
+
+if(numberInput % 2 === 0){
+    console.log(numberInput);
+}
+else{
+    numberInput++;
+    console.log(numberInput);
+}
+
+
 // Snack 2
 // L’utente inserisce due parole in successione, con due prompt.
 // Il software stampa prima la parola più corta, poi la parola più lunga.
