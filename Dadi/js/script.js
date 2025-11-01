@@ -8,19 +8,19 @@
 // Non è necessario provvedere alla validazione delle email.
 // NON USARE INCLUDES!
 
-const emailList = ["red@mail.com","blue@mail.com","green@mail.com"]
+// const emailList = ["red@mail.com","blue@mail.com","green@mail.com"]
 
-let emailInput = prompt("Insert your email");
+// let emailInput = prompt("Insert your email");
 
-for (let i = 0; i < emailList.length; i++){
-    let currentEmail = emailList[i];
-    if(currentEmail !== emailInput){
-        console.log("Something went wrong! Reinsert your email correctly ");
-    }
-    else{
-        console.log("Authentication valid! You can now access your email ");
-    }
-}
+// for (let i = 0; i < emailList.length; i++){
+//     let currentEmail = emailList[i];
+//     if(currentEmail !== emailInput){
+//         console.log("Something went wrong! Reinsert your email correctly ");
+//     }
+//     else{
+//         console.log("Authentication valid! You can now access your email ");
+//     }
+// }
 
 
 
@@ -38,3 +38,22 @@ for (let i = 0; i < emailList.length; i++){
 // 3. si ma noi cosa vogliamo fare?
 // 4. torniamo a scrivere in italiano
 // 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+
+
+
+
+    const randomNr = Math.floor(Math.random() * 6);
+    console.log(randomNr);
+
+    const userNr = prompt("Insert a number from 1 to 6")
+    console.log(userNr);
+
+    if (randomNr > userNr) {
+        console.log("Computer is the winner!");
+    }
+    else{
+        console.log("You are the winner!");
+    }
+
+
+
