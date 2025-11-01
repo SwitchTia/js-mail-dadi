@@ -8,6 +8,8 @@
 // Non è necessario provvedere alla validazione delle email.
 // NON USARE INCLUDES!
 
+
+
 // const emailList = ["red@mail.com","blue@mail.com","green@mail.com"]
 
 // let emailInput = prompt("Insert your email");
