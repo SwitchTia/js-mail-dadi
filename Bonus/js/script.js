@@ -22,13 +22,32 @@ else{
 const word1 = prompt("Insert your first word");
 const word2 = prompt("Insert your second word");
 
+let shortWord = "";
+let longWord = "";
+
 if (word1.length > word2.length){
-    console.log(word2);
-    console.log(word1);
+    shortWord = word2;
+    longWord = word1;
 }
+else {
+    shortWord = word1;
+    longWord = word2;
+}
+console.log(shortWord);
+console.log(longWord);
+
 
 // Snack 3
 // Crea una variabile con un numero di 4 cifre e calcola la somma di tutte le cifre che compongono il numero.
+
+const number = 1234;
+let sum = 0;
+
+for(let i = 0; i < number.length; i++){
+    let currentNumber = number[i];
+    sum = sum + 1;
+}
+console.log(sum);
 
 // Snack 4
 // Stampa il cubo dei primi N numeri,
