@@ -40,14 +40,25 @@ console.log(longWord);
 // Snack 3
 // Crea una variabile con un numero di 4 cifre e calcola la somma di tutte le cifre che compongono il numero.
 
-const number = 1234;
+const numberVar = 1234;
+//console.log(numberVar.typeof);
+let numberStr = numberVar.toString();
+//console.log(numberStr.typeof);
+
+const numberArray = Array.prototype.slice.call(numberStr);
+//const numberArray = numberStr.split("");
+console.log(numberArray);
+
+//let sum = numberArray.reduce((a, b)=> a + b, 0);
 let sum = 0;
 
-for(let i = 0; i < number.length; i++){
-    let currentNumber = number[i];
-    sum = sum + 1;
+for(let i = 0; i < numberArray.length; i++){
+    let currentNumberStr = numberArray[i];
+    let currentNumber = parseInt(currentNumberStr);
+    console.log(currentNumber);
+    sum += currentNumber;
 }
-console.log(sum);
+console.log(`The sum of all the numbers in ${numberStr} is equal to ${sum}`);;
 
 // Snack 4
 // Stampa il cubo dei primi N numeri,
