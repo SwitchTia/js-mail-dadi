@@ -74,15 +74,18 @@ let inputNumber = prompt("Snack 4: Insert a number please:");
 let n = parseInt(inputNumber);
 let arrayN = [];
 
-for(let i = 1; i < n; i++){
+for (let i = 1; i < n; i++) {
     arrayN.push(i);
 }
 console.log(arrayN);
 
-for(let i = 0; i < arrayN.length; i++){
+for (let i = 0; i < arrayN.length; i++) {
     let currentNumber = arrayN[i];
-    console.log(`Snack 4:  ${currentNumber**3}`);
+    console.log(`Snack 4:  ${currentNumber ** 3}`);
 }
+// for(let i = 1; i < n.length; i++){
+//     console.log(`Snack 4:  ${n[i] ** 3}`);
+// }
 
 
 
@@ -90,31 +93,58 @@ for(let i = 0; i < arrayN.length; i++){
 // Generatore di “nomi cognomi” casuali: il Grande Gatsby ha una lista di nomi e una lista di cognomi, 
 // e da queste vuole generare una falsa lista di 5 invitati con nome e cognome.
 
-// const nomi = [
-//   "Albert",
-//   "Leonardo",
-//   "Marilyn",
-//   "Michael",
-//   "Serena",
-//   "Elon",
-//   "Frida",
-//   "Steve",
-//   "Beyoncé",
-//   "David"
-// ];
+const nomi = [
+    "Albert",
+    "Leonardo",
+    "Marilyn",
+    "Michael",
+    "Serena",
+    "Elon",
+    "Frida",
+    "Steve",
+    "Beyoncé",
+    "David"
+];
 
-// const cognomi = [
-//   "Einstein",
-//   "da Vinci",
-//   "Monroe",
-//   "Jackson",
-//   "Williams",
-//   "Musk",
-//   "Kahlo",
-//   "Jobs",
-//   "Knowles",
-//   "Beckham"
-// ];
+const cognomi = [
+    "Einstein",
+    "da Vinci",
+    "Monroe",
+    "Jackson",
+    "Williams",
+    "Musk",
+    "Kahlo",
+    "Jobs",
+    "Knowles",
+    "Beckham"
+];
+
+let randomFullNamesList = [];
+let randomFullName = "";
+let randomName = "";
+let randomSurname = "";
+let random5NamesList = [];
+
+for (let i = 0; i < nomi.length; i++) {
+    let currentName = nomi[i];
+    randomName = nomi[Math.floor(Math.random() * nomi.length)];
+
+    for (let j = 0; j < cognomi.length; j++) {
+        let currentSurname = cognomi[j];
+        randomSurname = cognomi[Math.floor(Math.random() * cognomi.length)];
+    }
+    randomFullNamesList += (randomName + " " + randomSurname + " ");
+}
+console.log(`Snack 5: Here are random 10 names: ${randomFullNamesList}`);
+
+
+// for (let i = 0; i < 5; i++) {
+//     randomNamesList.push(randomFullName);
+// }
+// console.log(`Snack 5: Here are random 5 names: ${randomNamesList}`);
+
+
+
 
 // Snack 6
 // Crea due array che hanno un numero di elementi diversi.  Aggiungi elementi all’array che ha 
