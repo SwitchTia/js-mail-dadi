@@ -74,18 +74,15 @@ let inputNumber = prompt("Snack 4: Insert a number please:");
 let n = parseInt(inputNumber);
 let arrayN = [];
 
-for (let i = 1; i < n; i++) {
+for (let i = 1; i <= n; i++) {
     arrayN.push(i);
 }
-console.log(arrayN);
+console.log(`Snack 4: First n numbers list is: ${arrayN}`);
 
 for (let i = 0; i < arrayN.length; i++) {
     let currentNumber = arrayN[i];
-    console.log(`Snack 4:  ${currentNumber ** 3}`);
+    console.log(`Snack 4:  ${currentNumber} at power 3 equals to ${currentNumber ** 3}`);
 }
-// for(let i = 1; i < n.length; i++){
-//     console.log(`Snack 4:  ${n[i] ** 3}`);
-// }
 
 
 
@@ -124,6 +121,7 @@ let randomFullName = "";
 let randomName = "";
 let randomSurname = "";
 let random5NamesList = [];
+
 
 for (let i = 0; i < nomi.length; i++) {
     let currentName = nomi[i];
