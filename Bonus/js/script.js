@@ -4,37 +4,37 @@
 // Snack 1
 // Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo.
 
-// let numberInput = prompt("Insert a number");
+let numberInput = prompt("Insert a number");
 
-// if(numberInput % 2 === 0){
-//     console.log(numberInput);
-// }
-// else{
-//     numberInput++;
-//     console.log(numberInput);
-// }
+if(numberInput % 2 === 0){
+    //console.log(numberInput);
+}
+else{
+    numberInput++;
+}
+console.log(`Snack 1: The number is ${numberInput}`);
 
 
 // Snack 2
 // L’utente inserisce due parole in successione, con due prompt.
 // Il software stampa prima la parola più corta, poi la parola più lunga.
 
-// const word1 = prompt("Insert your first word");
-// const word2 = prompt("Insert your second word");
+const word1 = prompt("Insert your first word");
+const word2 = prompt("Insert your second word");
 
-// let shortWord = "";
-// let longWord = "";
+let shortWord = "";
+let longWord = "";
 
-// if (word1.length > word2.length){
-//     shortWord = word2;
-//     longWord = word1;
-// }
-// else {
-//     shortWord = word1;
-//     longWord = word2;
-// }
-// console.log(shortWord);
-// console.log(longWord);
+if (word1.length > word2.length){
+    shortWord = word2;
+    longWord = word1;
+}
+else {
+    shortWord = word1;
+    longWord = word2;
+}
+console.log(`Snack 2: The short word is ${shortWord}`);
+console.log(`Snack 2: The long word is ${longWord}`);
 
 
 // Snack 3
@@ -45,20 +45,20 @@ const numberVar = 1234;
 let numberStr = numberVar.toString();
 //console.log(numberStr.typeof);
 
-const numberArray = Array.prototype.slice.call(numberStr);
+const numberStrArray = Array.prototype.slice.call(numberStr);
 //const numberArray = numberStr.split("");
-console.log(numberArray);
+console.log(`Snack 3: The string array is ${numberStrArray}`);
 
 //let sum = numberArray.reduce((a, b)=> a + b, 0);
 let sum = 0;
 
-for(let i = 0; i < numberArray.length; i++){
-    let currentNumberStr = numberArray[i];
+for(let i = 0; i < numberStrArray.length; i++){
+    let currentNumberStr = numberStrArray[i];
     let currentNumber = parseInt(currentNumberStr);
     console.log(currentNumber);
     sum += currentNumber;
 }
-console.log(`The sum of all the numbers in ${numberStr} is equal to ${sum}`);;
+console.log(`Snack 3: The sum of all the numbers in ${numberStr} is equal to ${sum}`);;
 
 // Snack 4
 // Stampa il cubo dei primi N numeri,
